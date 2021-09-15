@@ -55,13 +55,17 @@ header h3 {
   text-transform: uppercase;
 }
 .info {
-  width: 49rem;
+  width: 90%;
   text-align: start;
+  margin-bottom: 2rem;
 }
 .group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+}
+.user:nth-child(2){
+  padding-top: 4rem;
 }
 @media (min-width: 992px) {
   .group{
@@ -70,23 +74,24 @@ header h3 {
   
 }
 
-.user1 {
+.user {
   position: relative;
+  width: 80%;
+
 }
-.work {
-  position: absolute;
-  width: 130px;
-  height: 11px;
-  left: 175px;
-  top: 318px;
+.user h4{
+  font-size: 1.8rem;
 }
 .texto-vertical {
   font-family: PT Serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 1.5rem;
   line-height: 13px;
   text-transform: uppercase;
   color: #000000;
   transform: rotate(90deg);
+  position: absolute;
+  top: 4rem;
+  right: -8rem;
 }

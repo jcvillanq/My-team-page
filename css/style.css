@@ -10,8 +10,8 @@ html {
 }
 
 /* Globals */
-img {
-  max-width: 100%;
+img{
+  max-width:100%;
   display: block;
 }
 body {
@@ -23,7 +23,6 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
- 
 }
 
 /* Site-styles */
@@ -31,23 +30,23 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 3rem;
 }
-@media (min-width: 992px) {
-  header{
+@media (min-width: 768px) {
+  header {
     display: grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     height: 30rem;
-    margin: 3rem 4rem;
-
+    margin: 3rem 4rem 5rem 4rem;
   }
-  .info{
+  .info {
     display: flex;
     flex-direction: column;
     height: 24rem;
     justify-content: flex-end;
   }
-  .info h3{
+  .info h3 {
     margin: 0;
   }
 }
@@ -64,28 +63,25 @@ header h3 {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
-.user:nth-child(2){
-  padding-top: 4rem;
-}
-@media (min-width: 992px) {
-  .group{
+
+@media (min-width: 768px) {
+  
+  .group {
     grid-template-columns: repeat(3, 1fr);
   }
-  
 }
 
+/* USERS */
 .user {
   position: relative;
   width: 80%;
-
 }
-.user h4{
-  font-size: 1.8rem;
+.user h4 {
+  font-family: Poppins ;
+  font-size: 2.5rem;
 }
 .texto-vertical {
   font-family: PT Serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.5rem;
   line-height: 13px;
   text-transform: uppercase;
@@ -94,4 +90,39 @@ header h3 {
   position: absolute;
   top: 4rem;
   right: -8rem;
+}
+.user-down {
+  padding-top: 5rem;
+}
+.texto-vertical2 {
+  font-family: PT Serif;
+  font-size: 1.5rem;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #000000;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 9.2rem;
+  right: -8rem;
+}
+@media (min-width: 768px) {
+  .user:nth-child(5) {
+    padding-top: 10rem;
+  }
+  .user:nth-child(5)>.texto-vertical {
+   
+    top: 14rem;
+    right: -8rem;
+  }
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  color: darkgray;
+  font-size: 2.5rem;
+}
+footer span {
+  font-weight: 600;
 }
